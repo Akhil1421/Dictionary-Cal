@@ -5,7 +5,7 @@ import evaluate from "./evaluateEq"
 const Calculator = ()=>{
     let [equation,setEquation] = React.useState([])
     function add(event){
-        let symbols = ["+", "*", "/", "%", "B", "C", "^", "="]
+        let symbols = ["+","*", "/", "%", "B", "C", "^", "=", "-"]
         if(!symbols.includes(event.target.innerText)){
                 setEquation(prev=>{
                     let a=[] 
@@ -14,9 +14,14 @@ const Calculator = ()=>{
                     }
                     if(a.length>0){
                         if(!symbols.includes(a[a.length-1])){
-                            a[a.length-1] = a[a.length-1]+event.target.innerText;
+                             a[a.length-1] = a[a.length-1]+event.target.innerText;
                         }
-                        else a.push(event.target.innerText)
+                        else {
+                            if(a.length===1 && a[0]==="-"){
+                                a[0]+=event.target.innerText;
+                            }
+                            else a.push(event.target.innerText)
+                        }
                     }
                     else a.push(event.target.innerText)
                     return a
