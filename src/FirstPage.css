@@ -1,0 +1,98 @@
+@media (max-width: 768px) {
+    .front{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bolder;
+    z-index:1;
+    }
+    .choice-box-2,.choice-box-1{
+        border: .25rem solid white ;
+        border-radius : 2rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-color: #1FD1F9; 
+    }
+    .choice-box-2{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .front{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bolder;
+    }
+    .choice-box-2,.choice-box-1{
+        border: .25rem solid white ;
+        border-radius : 2rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-color: #1FD1F9; 
+    }
+    .choice-box-2{
+        margin-bottom: 2rem;
+    }
+    .choice-box-1>img, .choice-box-2>img{
+        width: 170px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 600px) {
+    .front{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bolder;
+    }
+    .choice-box-2,.choice-box-1{
+        border: .25rem solid white ;
+        border-radius : 2rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        background-color: #1FD1F9; 
+    }
+    .choice-box-2{
+        margin-bottom: 2rem;
+    }
+    .choice-box-1>img, .choice-box-2>img{
+        width: 200px;
+        height: 300px;
+    }
+}
+@media (min-width: 768px){
+    .front{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color : #fff;
+        font-weight: bolder;
+    }
+    .choice-box-1, .choice-box-2{
+        width: 400px;
+        height: 450px;
+        margin: 5rem;
+        margin-top: 6rem;
+        border: .25rem solid white ;
+        border-radius : 1rem;
+        background-color: #1FD1F9; 
+    }
+    .choice-box-1>img, .choice-box-2>img{
+        width: 292px;
+        height: 300px;
+    }
+}
+.choice-box-1>img{
+    margin-bottom: -1rem;
+}

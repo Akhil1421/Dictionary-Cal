@@ -1,0 +1,64 @@
+.dictionary-top{
+    display: grid;
+    grid-template: 2rem/3fr 1.5fr;
+    margin-top: 3rem;
+    padding: 1rem 1rem;
+}
+.dictionary-top>button{
+    margin-left: .1rem;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-family: "Ebrima";
+    background: #B621FE;
+    color: white;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.dicProps{
+    margin-top : 2rem;
+}
+.dicProps{
+    font-style: italic;
+    color: #FFA69E;
+}
+.dicProps>p{
+    color : white;
+    font-size: 1rem;
+}
+.word{
+    border-radius: .5rem;
+    text-indent: .2rem;
+    background: #B621FE;
+    color: white;
+    font-weight: bold;
+    font-family: "Ebrima";
+}
+.word::placeholder{
+    color: white;
+    font-weight: bold;
+    font-family: "Ebrima";
+}
+.singular{
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px){
+    .Dictionary{
+        display: grid;
+        min-width: 700px;
+        font-size: 1.5rem;
+    }
+
+}
+@media (min-width: 996px){
+    .Dictionary{
+        display: grid;
+        min-width: 900px;
+        font-size: 1.5rem;
+    }
+}
