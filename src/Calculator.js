@@ -18,13 +18,18 @@ const Calculator = ()=>{
                         }
                         else {
                             if(a.length!==1 && a[a.length-1]==="-"){
-                                a[a.length-1]+=event.target.innerText;
-                                let c=a[a.length-1];
-                                a[a.length-1]="+"
-                                a.push(c)
+                                if(symbols.includes(a[a.length-2])){
+                                    a[a.length-1]+=event.target.innerText;                                         
+                                }
+                                else {
+                                    a[a.length-1]+=event.target.innerText;
+                                    let c=a[a.length-1];
+                                    a[a.length-1]="+"
+                                    a.push(c)
+                                }
                             }
                             else if(a.length===1 && a[0]==="-"){
-                                a[0]+=event.target.innerText
+                                a[0]+=event.target.in
                             }
                             else a.push(event.target.innerText)
                         }

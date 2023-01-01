@@ -16,14 +16,14 @@ function evaluate(prev){
             prev.splice(prev.indexOf("*"),2);
             continue;
         }
-        if(prev.includes("-")){
-            prev[prev.indexOf("-")-1] = Number(prev[prev.indexOf("-")-1])-Number(prev[prev.indexOf("-")+1]);
-            prev.splice(prev.indexOf("-"),2);
-            continue;
-        }
         if(prev.includes("+")){
             prev[prev.indexOf("+")-1] = Number(prev[prev.indexOf("+")-1])+Number(prev[prev.indexOf("+")+1]);
             prev.splice(prev.indexOf("+"),2);
+            continue;
+        }
+        if(prev.includes("-")){
+            prev[prev.indexOf("-")-1] = Number(prev[prev.indexOf("-")-1])-Number(prev[prev.indexOf("-")+1]);
+            prev.splice(prev.indexOf("-"),2);
             continue;
         }
         if(prev.includes("%")){
