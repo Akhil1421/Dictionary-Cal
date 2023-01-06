@@ -31,6 +31,9 @@ const Calculator = ()=>{
                             else if(a.length===1 && a[0]==="-"){
                                 a[0]+=event.target.innerText
                             }
+                            else if(a.length===1 && a[0]==="+"){
+                                a[0]=event.target.innerText
+                            }
                             else a.push(event.target.innerText)
                         }
                     }
